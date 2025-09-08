@@ -3,17 +3,127 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>portfolio</title>
+  <title>Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<div class="title1">
-  <h3>developer:</h3>
-</div>
-<div class="title1">
-    <h3>music:</h3>
-</div>
-<div class="image_main">
-    <img class="squary" src="images\a3523139409_10.jpg">
-    <div class="image_main_info">"Membrana", 293 Diagonal</div>
-</div>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="nav-bar">
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://www.linkedin.com/in/danielsousx/" target="_blank">LinkedIn</a>
+    </nav>
+  </header>
+
+  <!-- GAMES Section -->
+  <div class="title1">
+    <h3>GAMES (audio programming, sound design and middleware integration):</h3>
+    <div class="image_container_1">
+      <div class="image_main" data-audio="audio/thewayback.mp3">
+        <a href="https://alek-3010.itch.io/the-way-back" target="_blank">
+          <img class="squary" src="images/TheWayBack_titlescreen02.jpg" alt="thewayback">
+          <div class="image_main_info">The Way Back</div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- TECH Section -->
+  <div class="title1">
+    <h3>TECH (audio programming, electro-acoustics, hardware and software development):</h3>
+    <div class="image_container">
+      <div class="image_main">
+        <a href="remote_saxophone.html">
+          <img class="squary" src="images/image6.png" alt="remote_saxophone">
+          <div class="image_main_info">remote:saxophone</div>
+        </a>
+      </div>
+      <div class="image_main">
+        <a href="generative.html">
+          <img class="squary" src="images/Hardware.JPG" alt="generative">
+          <div class="image_main_info">Biofeedback System For Relaxation Assistance</div>
+        </a>
+      </div>
+      <div class="image_main">
+        <a href="body_tracking.html">
+          <img class="squary" src="images/body_tracking.png" alt="body_tracking">
+          <div class="image_main_info">SoundField</div>
+        </a>
+      </div>
+      <div class="image_main">
+        <a href="bubble.html">
+          <img class="squary" src="bubble/grid.png" alt="bubble">
+          <div class="image_main_info">Modelling A Bubble With Finite Schemes</div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MOVIES Section -->
+  <div class="title1">
+    <h3>MOVIES (audio production, composition, sound design and recording):</h3>
+  </div>
+  <div class="image_container_1">
+    <div class="image_main" data-audio="audio/tittlepart.mp3">
+      <a href="https://jiaweizheng.cargo.site/sinking-latitude" target="_blank">
+        <img class="squary" src="images/still1.jpg" alt="Sinking Latitude">
+        <div class="image_main_info">"Sinking Latitude", Jiawei Zheng</div>
+      </a>
+    </div>
+
+    <div class="image_main" data-audio="audio/myakoschannel.mp3">
+      <a href="https://jiaweizheng.cargo.site/miyako's-channel" target="_blank">
+        <img class="squary" src="images/Screenshot 2025-09-08 120308.png" alt="Miyako’s Channel">
+        <div class="image_main_info">"Miyako’s Channel (You Will Never Know)", Jiawei Zheng</div>
+      </a>
+    </div>
+  </div> 
+
+  <!-- MUSIC Section -->
+  <div class="title1">
+    <h3>MUSIC (audio production and composition):</h3>
+  </div>
+  <div class="image_container">
+    <div class="image_main">
+      <a href="https://293diagonal.bandcamp.com/album/membrana" target="_blank">
+        <img class="squary" src="images/a3523139409_10.jpg" alt="Membrana">
+        <div class="image_main_info">"Membrana", 293 Diagonal</div>
+      </a>
+    </div>
+
+    <div class="image_main">
+      <a href="https://acoracaodeboi.bandcamp.com/album/gonzo" target="_blank">
+        <img class="squary" src="images/a4041055627_10.jpg" alt="GONZO">
+        <div class="image_main_info">"GONZO", GONZO</div>
+      </a>
+    </div>
+
+    <div class="image_main">
+      <a href="https://inesmalheiro.bandcamp.com/album/liquify-spread-and-float" target="_blank">
+        <img class="squary" src="images/a0408720344_10.jpg" alt="Liquify, spread and float">
+        <div class="image_main_info">"liquify, spread and float", Var</div>
+      </a>
+    </div>
+  </div> 
+
+  <!-- Audio Player -->
+  <div class="audio-player">
+    <audio id="player" controls></audio>
+    <div id="current-track"></div>
+  </div>
+
+  <script src="audio.js"></script>
+</body>
 </html>
