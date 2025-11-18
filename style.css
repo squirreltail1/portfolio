@@ -225,3 +225,58 @@ audio {
     flex-wrap: wrap;           /* allows wrapping if screen is too narrow */
     padding: 20px;             /* optional spacing around container */
 }
+
+.squarii {
+    width: auto;       /* keep original width */
+    height: auto;      /* keep original height */
+    max-width: 60%;   /* scale down if needed to fit container */
+    max-height: 60%;
+}
+
+
+.image {
+    height: 100%;
+    justify-content: center;  /* center horizontally */
+    align-items: center;      /* center vertically */
+}
+
+.subtitle_video {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #666;   /* subtle grey subtitle */
+  text-align: center;  /* center under the image */
+}
+
+.image-container_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px; /* smaller space between blocks */
+}
+
+.image {
+    max-width: 100%;          /* optional: keep image within container */
+    max-height: 100%;
+}
+
+.subtitle_1 {
+    margin: 5px 0 0 0; /* top margin only, remove bottom margin */
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+    color: #666;
+}
+
+.squariii {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.wrapperi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* center horizontally */
+    align-items: center;      /* center vertically */
+    margin-bottom: 15px;
+}
