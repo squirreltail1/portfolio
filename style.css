@@ -192,3 +192,14 @@ video {
     width: 300px;      /* set exact size */
     height: auto;
 }
+
+audio {
+    width: 100%;      /* full width */
+    max-width: 500px; /* or any size you prefer */
+}
+
+
+.squari {
+  width: auto;
+  height: auto;
+}

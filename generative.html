@@ -14,4 +14,38 @@
     </nav>
   </header>
 </body>
+<div class="title1">
+  <h1>Biofeedback System For Relaxation Assistance</h1>
+</div>
+
+<ul class="project-summary">
+  <li>Developed a software pipeline in Python to translate heart rate and heart rate variability into control signals for a digital synthesizer.</li>
+  <li>Created intelligent mappings between physiological data (e.g., heart rate) and musical elements (e.g., tempo, chord complexity) to deliberately lower the user's perceived arousal.</li>
+  <li>Integrated hardware (ESP32 microcontroller and heart rate sensor) with software to enable real-time, bio-responsive music generation.
+  <li>Built and tested ambient soundscapes, validating the system's effectiveness through user feedback.</li>
+</ul>
+
+<a href="generative/heart_rate_sensor.ino" download="heart_rate_sensor.ino">
+  heart_rate_sensor.ino
+</a>
+<br>
+
+<a href="generative/generativemusic_heart_rate.py" download="generativemusic_heart_rate.py">
+  generativemusic_heart_rate.py
+</a>
+
+<div class="wrapper">
+    <audio controls>
+        <source src="generative/generative.wav" type="audio/wav">
+        Your browser does not support the audio tag.
+    </audio>
+</div>
+
+   
+<div class="wrapper">
+      <div class="image">
+        <img class="squari" src="generative/Screenshot 2025-09-08 143347.png">
+        <p class="subtitle">Signal Chain</p>
+      </div>
+
 </html>
