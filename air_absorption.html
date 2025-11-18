@@ -16,5 +16,35 @@
   </header>
   
 </body>
+<div class="title1">
+  <h1>Air Absorption Simulation In Real Time - Unity</h1>
+</div>
 
+<ul class="project-summary">
+  <li>Implemented the ISO 9613-1 air absorption model in C# as a real-time audio plugin for Unity, simulating frequency-dependent sound attenuation over distance.</li>
+  <li>Used FFT convolution with an overlap-add method to apply a dynamically calculated impulse response based on temperature, humidity, pressure, and source-listener distance.</li>
+  <li>Designed a Unity environment with a customizable GUI to adjust atmospheric parameters in real-time and visualize the effect of air absorption on sound.</li>
+  <li>Validated the model by comparing its magnitude response with analytical results, confirming accurate attenuation behavior, especially in low-pass filtering effects over distance.</li>
+</ul>
+
+<a href="air_absorption/SoundAirAbsorption_Unity.zip" download="SoundAirAbsorption_Unity.zip">
+  SoundAirAbsorption_Unity.zip
+</a>
+
+
+<div class="image_container_1">
+      <div class="image">
+        <img class="squari" src="air_absorption/Screenshot 2025-05-05 183618.png">
+        <p class="subtitle">Unity GUI</p>
+      </div>
+
+      <div class="image">
+        <img class="squary" src="air_absorption/fft_impulse_0_100H_80m.jpg">
+        <p class="subtitle">Frequency Response - ISO 9613-1</p>
+      </div>
+
+      <div class="image">
+        <img class="squary" src="air_absorption/0t_100h_80m_airabsorptionmodelISO.jpg">
+        <p class="subtitle">Frequency Response - Unity Integration</p>
+      </div>
 </html>

@@ -196,8 +196,8 @@
 .wrapperi video {
     width: auto;       /* keep original width */
     height: auto;      /* keep original height */
-    max-width: 68%;   /* scale down if needed to fit container */
-    max-height: 68%;  /* scale down if needed to fit container */
+    max-width: 60%;   /* scale down if needed to fit container */
+    max-height: 60%;  /* scale down if needed to fit container */
 }
 
 /* make video smaller */
@@ -215,4 +215,13 @@ audio {
 .squari {
   width: auto;
   height: auto;
+}
+
+.image_container_1 {
+    display: flex;
+    justify-content: center;  /* centers horizontally */
+    align-items: flex-start;  /* aligns images to the top; can use center if you want vertical centering */
+    gap: 20px;                /* space between images */
+    flex-wrap: wrap;           /* allows wrapping if screen is too narrow */
+    padding: 20px;             /* optional spacing around container */
 }
