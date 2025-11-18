@@ -152,3 +152,43 @@
 .vertical-form button:hover {
     background-color: #5e5d5d;
 }
+
+
+.project-summary {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.project-summary li {
+  margin-bottom: 6px;
+}
+
+.title1 h3,
+.project-summary {
+  text-align: left;
+}
+
+.subtitle {
+  font-size: 14px;
+  margin-top: 6px;
+  color: #666;   /* subtle grey subtitle */
+  text-align: center;  /* center under the image */
+}
+
+.image img {
+  margin-top: 20px; /* adds empty space under the image */
+}
+
+.wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;  /* center horizontally */
+    align-items: center;      /* center vertically */
+}
+
+/* make video smaller */
+video {
+    width: 300px;      /* set exact size */
+    height: auto;
+}
