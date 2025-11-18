@@ -187,6 +187,19 @@
     align-items: center;      /* center vertically */
 }
 
+.wrapperi {
+    display: flex;
+    justify-content: center;  /* center horizontally */
+    align-items: center;      /* center vertically */
+}
+
+.wrapperi video {
+    width: auto;       /* keep original width */
+    height: auto;      /* keep original height */
+    max-width: 68%;   /* scale down if needed to fit container */
+    max-height: 68%;  /* scale down if needed to fit container */
+}
+
 /* make video smaller */
 video {
     width: 300px;      /* set exact size */
