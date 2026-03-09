@@ -1,34 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TECH Projects</title>
-  <link rel="stylesheet" href="style.css"> <!-- Use the same CSS if you want consistent styling -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact</title>
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+(function(){
+emailjs.init("DLO4m_FwTWS9kIhHB"); 
+})();
+
+function sendMail(event){
+event.preventDefault();
+
+emailjs.send("service_ow7ssxf","template_r63x00q",{
+name: document.getElementById("name").value,
+email: document.getElementById("email").value,
+message: document.getElementById("message").value
+})
+.then(function(){
+alert("Message sent successfully!");
+document.getElementById("contact-form").reset();
+}, function(error){
+alert("Failed to send message.");
+});
+}
+</script>
+
 </head>
 
+<body>
+
 <header class="site-header">
-    <nav class="nav-bar">
-      <a href="index.html">Home</a>
-      <a href="contact.html">Contact</a>
-      <a href="https://www.linkedin.com/in/danielsousx/" target="_blank">LinkedIn</a>
-    </nav>
-  </header>
-    
+<nav class="nav-bar">
+<a href="home.html">Reel</a>
+<a href="index.html">Portfolio</a>
+<a href="contact.html">Contact</a>
+<a href="https://www.linkedin.com/in/danielsousx/" target="_blank">LinkedIn</a>
+</nav>
+</header>
+
 <div class="contact-container">
-    <form class="vertical-form" action="mailto:daniel.sousa.sax@gmail.com" method="post" enctype="text/plain">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+<form id="contact-form" class="vertical-form" onsubmit="sendMail(event)">
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
+<label for="name">Name:</label>
+<input type="text" id="name" required>
 
-        <button type="submit">Send</button>
-    </form>
+<label for="email">Email:</label>
+<input type="email" id="email" required>
+
+<label for="message">Message:</label>
+<textarea id="message" required></textarea>
+
+<button type="submit">Send</button>
+
+</form>
+
 </div>
 
-
+</body>
 </html>

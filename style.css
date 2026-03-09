@@ -280,3 +280,9 @@ audio {
     align-items: center;      /* center vertically */
     margin-bottom: 15px;
 }
+
+.parent-div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
